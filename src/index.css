@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Warm Hospital Linen & Forest Sage Baseline */
+:root {
+  --color-canvas: #F6F4EF;
+  --color-surface: #FFFFFF;
+  --color-border: #E6E1D8;
+  --color-pine: #1E4D3A;
+  --color-pine-hover: #163C2D;
+  --color-sage: #3D8B6E;
+  --color-sage-soft: #E8F3EE;
+  --color-terracotta: #C85A32;
+  --color-ink: #182620;
+}
+
+body {
+  background-color: #F6F4EF;
+  color: #182620;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
+
+/* Print Stylesheet for Indian PHC OPD Prescription Slip */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+  }
+
+  /* Hide screen-only interactive chrome */
+  header, nav, footer, button, .no-print, [role="tablist"], .sticky-bottom-bar {
+    display: none !important;
+  }
+
+  /* Ensure print sheet takes full page without clipping */
+  .printable-opd-slip {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: 1px solid #1e293b !important;
+    page-break-inside: avoid !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 12mm 15mm;
+  }
+}

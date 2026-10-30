@@ -1,0 +1,6 @@
+{
+  "summary":  "Implementation plan for ClinicScribe Voice Notes: a zero-cost, responsive, mobile/tablet and desktop clinical documentation web application for Primary Health Centre (PHC) doctors. Features continuous speech-to-text dictation via the browser Web Speech API with dual fallback to deterministic regex clinical parsing and backend Gemini AI structuring; full support for 5 outpatient templates (Acute Fever, HTN/Diabetes, Antenatal Care, Pediatric Cough/Diarrhea, and General Adult OPD); interactive one-tap clinical symptom/diagnosis/treatment checklists; 1-page printable PHC OPD prescription slips with QR verification; digital card view with one-tap WhatsApp/SMS share; patient directory and visit history; and an automated administrative OPD epidemiology reporting dashboard with CSV/JSON export.",
+  "updatedAt":  "2026-10-30T05:33:58.361587115Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}

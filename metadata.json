@@ -1,0 +1,6 @@
+{
+  "name": "ClinicScribe Voice Notes",
+  "description": "Rapid voice-to-text clinical documentation, SOAP rules structuring, 1-page OPD prescriptions, and epidemiology reporting for Primary Health Centres.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
